@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(to right, rgb(22, 120, 153), rgb(44, 144, 178), rgb(102, 191, 220), rgb(168, 233, 255));
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.first_digit,
+.second_digit,
+.third_digit {
+    background: rgb(255, 244, 244);
+    padding: 10px;
+    padding-bottom: 355px;
+    padding-right: 40px;
+    float: none;
+    border-radius: 15px;
+    color: rgb(67, 65, 65);
+}
+
+canvas{
+    border-radius: 20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AI Object Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1><b>AI Object Detector Web App</b></h1>
+        <marquee>
+            <span style="color:rgb(255, 254, 254); font-size: 17px;">The input name which you give should match the
+                names
+                present in CoCo model then only it will detect. You can write the Objct Name and then you have to show that thing in the camera and you will get the answer. 
+                Your Spelling should be correct in the text box. If the textbox text will be incorrect the website may cause problem.
+            </span>
+        </marquee>
+        <hr>
+        <span>
+            <h4 id="status">Status: LOADING</h4>
+            <h4 id="Object_Found">Object found: LOADING</h4>
+        </span>
+        <div class="col-lg-4 col-sm-7 col-xs-11 first_digit">
+            <h3>Object</h3>
+            <br>
+            <label>Object Name: </label>
+            <input type="text" id="input_text">
+            <br>
+        </div>
+        <br>
+        <button id="start_button_id" onclick="start()" class="btn" style="color:rgb(22, 120, 153);">Start</button>
+        <br>
+        <br>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>
